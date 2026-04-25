@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -45,7 +44,7 @@
             align-items: center;
             gap: 12px;
         }
-        /* Убираем картинку логотипа, чтобы не уплывал текст */
+        /* Логотип-картинка скрыт, используем только текст */
         .logo-img {
             display: none;
         }
@@ -124,7 +123,8 @@
         .hero {
             background: #1A1A1A;
             border-radius: 0 0 40px 40px;
-            padding: 60px 0; }
+            padding: 60px 0;
+        }
         .hero-grid {
             display: flex;
             align-items: center;
@@ -153,9 +153,7 @@
             max-width: 100%;
             border-radius: 24px;
             box-shadow: 0 20px 30px -10px rgba(0,0,0,0.5);
-        }
-
-        /* Карточки преимуществ */
+        }/* Карточки преимуществ */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -282,7 +280,8 @@
         .footer-col {
             flex: 1;
         }
-        .footer-col h4 {margin-bottom: 15px;
+        .footer-col h4 {
+            margin-bottom: 15px;
             color: #FFD700;
         }
         .footer-col a {
@@ -308,8 +307,7 @@
         }
 
         @media (max-width: 768px) {
-            .hero-text h2 { font-size: 1.8rem; }
-            .map-form-grid { grid-template-columns: 1fr; }
+            .hero-text h2 { font-size: 1.8rem; }.map-form-grid { grid-template-columns: 1fr; }
             .header-inner { flex-direction: column; gap: 15px; }
             .nav-links { justify-content: center; }
             section { padding: 40px 0; }
@@ -321,7 +319,6 @@
 <header>
     <div class="container header-inner">
         <div class="logo-area">
-            <!-- Логотип-картинка скрыт, используем только текст -->
             <div class="logo-text">
                 <h1>Моя школа</h1>
                 <p>вокал для взрослых в Ангарске</p>
@@ -391,7 +388,8 @@
                     <p>Слух развивается — мы знаем, как научить любого.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📅</div><h3>Мало свободного времени</h3>
+                    <div class="feature-icon">📅</div>
+                    <h3>Мало свободного времени</h3>
                     <p>Занятия 1-2 раза в неделю по 55 минут — достаточно для мощного прогресса.</p>
                 </div>
             </div>
@@ -405,12 +403,11 @@
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Бесплатный первый урок</h3>
+                    <h3>Бесплатный пробный урок</h3>
                     <p>2 часа в формате мастер-класса. Первые результаты вы увидите уже на первом занятии.</p>
                 </div>
                 <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Основной курс — 6 месяцев</h3>
+                    <div class="step-number">2</div><h3>Основной курс — 6 месяцев</h3>
                     <p>Разбираем технику, работаем над голосом, постановка дыхания.</p>
                 </div>
                 <div class="step">
@@ -446,16 +443,15 @@
         <div class="container map-form-grid">
             <div class="map">
                 <h3>Как нас найти</h3>
-                <iframe src=<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/org/moya_shkola/131060320060/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Моя школа</a><a href="https://yandex.ru/maps/11256/angarsk/category/courses_and_master_classes/184106220/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Курсы и мастер-классы в Ангарске</a><a href="https://yandex.ru/maps/11256/angarsk/category/music_club/780928338/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Музыкальный клуб в Ангарске</a><iframe src="https://yandex.ru/map-widget/v1/org/moya_shkola/131060320060/?from=mapframe&ll=103.852783%2C52.508186&utm_source=share&z=16" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>whatshere%5Bpoint%5D=103.920406,52.540270&whatshere%5Bzoom%5D=18&whatshere%5Btext%5D=%D0%90%D0%BD%D0%B3%D0%B0%D1%80%D1%81%D0%BA%2C%2022%20%D0%BC%D0%B8%D0%BA%D1%80%D0%BE%D1%80%D0%B0%D0%B9%D0%BE%D0%BD%2C%20%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5%2020" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+                <!-- Карта, сгенерированная по вашей ссылке -->
+                <iframe src="https://yandex.ru/map-widget/v1/org/moya_shkola/131060320060/?from=mapframe&ll=103.852783%2C52.508186&utm_source=share&z=16" width="100%" height="400" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe>
                 <p style="margin-top: 12px; color: #CCCCCC;">Ангарск, 22 микрорайон, строение 20</p>
             </div>
-           <div class="form-wrapper">
-    <h3>Запишитесь на пробное занятие</h3>
-    <p>Это бесплатно и ни к чему не обязывает. Просто попробуйте!</p>
-    <!-- Вот сюда вставьте iframe -->
-    <iframe src="https://forms.yandex.ru/u/69e2246e1f1eb5212ee31275/?iframe=1" frameborder="0" style="width:100%; height:550px; border:none;"></iframe>
-    <!-- Если внутри формы уже есть текст согласия, то внешний блок можно убрать -->
-</div>
+            <div class="form-wrapper">
+                <h3>Запишитесь на пробное занятие</h3>
+                <p>Это бесплатно и ни к чему не обязывает. Просто попробуйте!</p>
+                <iframe src="https://forms.yandex.ru/u/69e2246e1f1eb5212ee31275/?iframe=1" frameborder="0" style="width:100%; height:550px; border:none;"></iframe>
+            </div>
         </div>
     </section>
 </main>
@@ -469,7 +465,8 @@
                 <a href="https://vk.com/vokalangarsk" target="_blank">VK</a>
             </div>
         </div>
-        <div class="footer-col"><h4>Контакты</h4>
+        <div class="footer-col">
+            <h4>Контакты</h4>
             <a href="tel:+79246287784">+7 924 628 77 84</a>
             <a href="mailto:vokal-angarsk@mail.ru">vokal-angarsk@mail.ru</a>
             <a href="https://vk.com/vokalangarsk" target="_blank">Написать в VK</a>
@@ -490,4 +487,3 @@
 
 </body>
 </html>
-```
